@@ -1,0 +1,95 @@
+@media (max-width: 1250px) {
+
+    .circleBackground {
+        display: none;
+    }
+
+    body {
+        overflow: visible;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+    header .menu {
+        display: block;
+        z-index: 10;
+    }
+
+    header nav ul {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #092732;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.3s ease;
+        z-index: 10;
+    }
+
+    header nav ul.active {
+        top: 0;
+    }
+
+    header nav ul li a {
+        font-size: 1.1em;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    main section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    main section .content_Left .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    main section .content_Left .content .button {
+        width: 100%;
+    }
+
+    main section .content_Right {
+        width: 100%;
+        height: 100%;
+    }
+
+    main section .content_Right figure img {
+        max-width: 300px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 1.3em 1em;
+    }
+
+    main section .content_Right figure img {
+        max-width: 230px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    main section .content_Left .content .title h1 {
+        font-size: 3em;
+    }
+
+    main section .content_Left .content .colors .circles {
+        flex-direction: column;
+    }
+
+    main section .content_Right figure img {
+        max-width: 200px;
+    }
+}
